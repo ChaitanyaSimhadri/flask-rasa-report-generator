@@ -1,0 +1,23 @@
+version: "3.0"
+
+nlu:
+  - intent: send_report
+    examples: |
+      - Send me today's report
+      - Send me the latest report
+      - I need the report for today
+      - Email me the report
+
+  - intent: generate_summary
+    examples: |
+      - Generate weekly summary
+      - Create a monthly summary
+      - Give me a summary of the last week
+      - Produce a summary report
+
+  - intent: show_top_performers
+    examples: |
+      - Who are the top 3 products this week?
+      - Show me the top 5 performers this month
+      - List the top performing products
+      - Who are the best sellers?
