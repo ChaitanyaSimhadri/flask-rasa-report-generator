@@ -1,0 +1,31 @@
+version: "3.0"
+
+intents:
+  - send_report
+  - generate_summary
+  - show_top_performers
+
+actions:
+  - action_generate_report
+  - action_email_report
+  - action_query_summary
+
+responses:
+  utter_generating_report:
+  - text: "Generating report..."
+
+  utter_report_generated:
+  - text: "Report generated and sent to your email."
+
+  utter_querying_summary:
+  - text: "Querying summary..."
+
+  utter_summary_results:
+  - text: "Here is the summary you requested."
+
+  utter_default:
+  - text: "I'm sorry, I didn't understand. Can you please rephrase?"
+
+session_config:
+  session_expiration_time: 60
+  carry_over_slots_to_new_session: true
