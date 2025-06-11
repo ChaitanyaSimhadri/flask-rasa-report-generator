@@ -1,0 +1,21 @@
+version: "3.0"
+
+rules:
+  - rule: Respond to send_report intent
+    steps:
+      - intent: send_report
+      - action: action_generate_report
+
+  - rule: Respond to generate_summary intent
+    steps:
+      - intent: generate_summary
+      - action: action_email_report
+
+  - rule: Respond to show_top_performers intent
+    steps:
+      - intent: show_top_performers
+      - action: action_query_summary
+
+  - rule: Fallback rule
+    steps:
+      - action: utter_default
