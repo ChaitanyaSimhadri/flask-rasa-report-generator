@@ -1,0 +1,5 @@
+Flask
+rasa_sdk
+pandas
+schedule
+python-dotenv
